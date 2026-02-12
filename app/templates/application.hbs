@@ -1,7 +1,13 @@
-<h1>Hola Mundo 🎉</h1>
+<header class="navbar">
+  <h1 class="logo">Football</h1>
 
-<nav>
-  <LinkTo @route="home">Inicio</LinkTo>
-</nav>
+  <nav class="nav-links">
+    <LinkTo @route="home" class="nav-button">Inicio</LinkTo>
+    <LinkTo @route="blog" class="nav-button">Blog</LinkTo>
+    <LinkTo @route="teams" class="nav-button">Teams</LinkTo>
+  </nav>
+</header>
 
-{{outlet}}
+<main>
+  {{outlet}}
+</main>
